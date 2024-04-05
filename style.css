@@ -57,3 +57,7 @@ escola-imagem{
     border-radius: 82px; /*para definir bordas arredondadas da imagem*/
 }
 
+/**/
+.escola{
+    background-image: linear-gradient(#424e61,);
+}
