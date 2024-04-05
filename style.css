@@ -32,3 +32,28 @@ a propriedade display com o valor inline-block:*/
     font-size: 24px;
 }
 
+.cabeçalho-lista-item{
+   text-decoration-line: none; 
+    color: brown; /*cor*/
+}
+
+/*efeito alternar a cor quando passa o mouse*/
+a:hover {
+    color: blanchedalmond;
+}
+
+/*alterar a cor quando clicar com o mouse*/
+a:active{
+    color: cadetblue (105, 144, 216);
+}
+
+
+/*Iniciar Sessão escola*/
+
+/*crie um seletor (.) para a classe escola-imagem, determinando uma largura width de 25%:*/
+escola-imagem{
+    width: 25%; /*largura*/
+    height: 300px; /*altura*/
+    border-radius: 82px; /*para definir bordas arredondadas da imagem*/
+}
+
