@@ -59,5 +59,27 @@ escola-imagem{
 
 /**/
 .escola{
-    background-image: linear-gradient(#424e61,);
+    background-image: linear-gradient(#424e61,#16cff8);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+}
+
+/**/
+.escola-div-conteudo{
+    width: 45%;
+}
+
+/**/
+.escola-titulo{
+    padding: 24px 0;
+}
+
+/**/
+ p{
+padding: 0 40px; /* alinhar o espaçamento */
+font-size: 20px; /*tamanho da fonte*/
+font-family: Arial, Helvetica, sans-serif; /*especifica a fonte de um elemento*/
 }
