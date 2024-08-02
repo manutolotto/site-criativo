@@ -1,85 +1,143 @@
-/*adicionar as propriedades margin e padding no seletor universal (asterisco) */
+/*Adicionar as propriedades margin e padding no seletor universal (asterisco) */
 *{
-    margin:0;
-    padding:0;
+    margin: 0; /*altera o espaçamento externo*/
+    padding: 0; /*altera o espaçamento interno*/
 }
 
-/*Iniciar Sessão cabecalho*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(#16a5f8, #424E61);  
+}
 
-.cabecalho{
-background-color: darkcyan;
-color: black;
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 24px 0;
+/*Iniciar Seção cabeçalho*/
+.cabecalho {
+    color: #ffffff; /*cor*/
+    display: flex; /*propriedade flex para organizar os itens do cabaçalho, lado a lado*/
+    justify-content: space-around; /*alinha as imagens e os textos com espaçamento entre eles*/
+    align-items: center; /*alinhamento de itens centralizado*/
+    padding: 24px 0; /*altera o espaçamento interno*/
 }
 
 .cabecalho-imagem{
-    width: 8%;
-    border-radius: 22px; /*para definir bordas arredonddas da imagem*/
+    width: 8%; /*largura*/
+    border-radius: 22px; /*para definir bordas arredondadas da imagem*/  
 }
 
 /*A lista não ordenada ul precisa estar alinhada em uma única linha.
-Crie um seletor para classe .cabecalho-lista-item. adicionando nele
+Crie um seletor para a classe .cabecalho-lista-item, adicionando nele 
 a propriedade display com o valor inline-block:*/
 /*Aumente os espaçamentos entre os textos com a propriedade margin de valor 0 16px:*/
-/*Aumente a fonte através da propriedade font-zine de valor 24px:*/
+/*Aumente a fonte através da propriedade font-size de valor 24px.*/
 
 .cabecalho-lista-item{
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 24px;
+    display: inline-block; /*o valor inline-block na propriedade display,os item da lista ficam lado a lado*/
+    margin: 0 16px; /**/
+    font-size: 24px; /*tamanho da fonte*/
 }
 
-.cabecalho-lista-item{
-   text-decoration-line: none; 
-    color: brown; /*cor*/
+.cabecalho-lista-item a {
+   text-decoration: none; /**/
+   color: #000000;/*cor*/
 }
 
-/*efeito alternar a cor quando passa o mouse*/
+/*Efeito alterar a cor quando passa o mouse*/
 a:hover {
-    color: blanchedalmond;
+    color:#01141f; /*cor*/
 }
 
 /*alterar a cor quando clicar com o mouse*/
 a:active{
-    color: cadetblue (105, 144, 216);
+    color:rgb(199, 215, 246); /**/
 }
 
-
-/*Iniciar Sessão escola*/
-
-/*crie um seletor (.) para a classe escola-imagem, determinando uma largura width de 25%:*/
-escola-imagem{
-    width: 25%; /*largura*/
-    height: 300px; /*altura*/
-    border-radius: 82px; /*para definir bordas arredondadas da imagem*/
+/*INICIO SEÇÃO ESCOLA*/
+.principal__escola{
+    color: #000000; /*cor*/
+    display: flex; /*organizar a estrutura do nosso conteúdo*/
+    justify-content: center; /*alinha imagem e os textos com espaçamentos entre eles*/
+    padding: 24px 0; /*Altera o espaçamento interno*/
 }
 
-/**/
-.escola{
-    background-image: linear-gradient(#424e61,#16cff8);
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0;
-}
-
-/**/
 .escola-div-conteudo{
-    width: 45%;
+    width: 45%; /*largura*/
+    color: #000000;/*cor*/ 
 }
 
-/**/
 .escola-titulo{
-    padding: 24px 0;
+    padding: 24px 0; /*Altera o espaçamento interno,o primeiro valor bordas verticais (superior e inferior) e o 
+    segundo valor bordas horizontais(esquerda e direita)*/
+    font-size: 20px;/*tamanho da fonte*/
 }
 
-/**/
- p{
-padding: 0 40px; /* alinhar o espaçamento */
-font-size: 20px; /*tamanho da fonte*/
-font-family: Arial, Helvetica, sans-serif; /*especifica a fonte de um elemento*/
+.escola-texto{
+    font-size: 16px;/*tamanho da fonte*/
+      
 }
+
+.imagem-escola{
+     width: 30%; /*largura*/
+     height: 300px;/*altura*/
+     border-radius: 82px; /*para definir bordas arredondadas da imagem*/   
+}
+
+.muda_tamanho:hover{
+    font-size: 30px;
+}
+/*FIM SEÇÃO ESCOLA*/
+
+/*INICIO SEÇÃO ESTUDANTE*/
+.estudante{
+    color: #000000;/*cor*/
+}
+.estudante-titulo{
+    padding: 24px 0; /*Altera o espaçamento interno,o primeiro valor bordas verticais (superior e inferior) e o 
+    segundo valor bordas horizontais(esquerda e direita)*/
+    margin: 0 120px; /* alinhar o espaçamento */
+    font-size: 25px;/*tamanho da fonte*/
+}
+
+p{
+    padding: 0 120px; /* alinhar o espaçamento */
+    font-size: 16px;/*tamanho da fonte*/  
+    color: #171718;
+ }
+
+ .estudantes-todos{
+    display: grid; /* especificar o espaçamento do grid(organizar por colunas) */
+    grid-template-columns: 25% 25% 25% 25%; 
+    padding: 0 60px; /*Altera o espaçamento interno,o primeiro valor bordas verticais (superior e inferior) e o 
+    segundo valor bordas horizontais(esquerda e direita)*/
+    
+}
+
+.estudante-div{
+    text-align: center;/*texto centralizado*/  
+    padding: 12px 0; /*Altera o espaçamento interno,o primeiro valor bordas verticais (superior e inferior) e o 
+    segundo valor bordas horizontais(esquerda e direita)*/
+}
+
+.estudante-imagem{
+    width: 120px;  /*largura*/
+}
+
+.estudante-nome{
+    font-size: 14px;/*tamanho da fonte*/    
+}
+
+.estudante-icone{
+    width: 24px;  /*largura*/
+    padding: 4px 8px;/*Altera o espaçamento interno,o primeiro valor bordas verticais (superior e inferior) e o 
+    segundo valor bordas horizontais(esquerda e direita)*/
+}
+/*FIM SEÇÃO ESTUDANTE*/
+
+/*SEÇÃO RODAPÉ*/
+
+
+.copyright{
+    text-align: center;/*texto centralizado*/
+    height: 100px;/*altura*/
+    line-height: 100px;/*altura da linha*/
+    font-size: 12px;/*tamanho da fonte*/
+}
+/*FIM SEÇÃO RODAPÉ*/
